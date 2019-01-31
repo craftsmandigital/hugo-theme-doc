@@ -3,6 +3,7 @@ title: "GooglePhotoInstall"
 date: 2019-01-30T15:24:51+01:00
 draft: false
 SectionPagesMenu: "main"
+weight: 20
 ---
 
 {{< figure-group >}}
