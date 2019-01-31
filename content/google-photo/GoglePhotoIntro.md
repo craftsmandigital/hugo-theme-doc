@@ -1,7 +1,7 @@
 ---
 title: "Gogle foto introduksjon"
 date: 2019-01-29T12:49:03+01:00
-draft: true
+draft: false
 SectionPagesMenu: "main"
 ---
 {{< figure-group >}}

@@ -1,7 +1,7 @@
 ---
 title: "GooglePhotoInstall"
 date: 2019-01-30T15:24:51+01:00
-draft: true
+draft: false
 SectionPagesMenu: "main"
 ---
 
