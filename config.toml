@@ -1,4 +1,13 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "DataRekrutt"
 theme = "capsule"
+SectionPagesMenu = "main"
+canonifyURLs = true
+enableGitInfo = true
+
+[params]
+  repo = "https://github.com/hackingjack/hugo-datarekrutt.git"
+  share = true
+  searchURL = "https://google.com"
+
