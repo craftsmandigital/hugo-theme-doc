@@ -16,7 +16,8 @@
         {{- else }}
         <p class="title">{{ .Kind | title }}: {{ .Title }}</p>
         {{- end }}
-{{ range (.Paginate (.Pages.ByDate.Reverse)).Pages -}}
+
+        {{- range .Paginator.Pages.ByWeight }}
           {{ .Render "summary" }}
         {{- end }}
       </div>
