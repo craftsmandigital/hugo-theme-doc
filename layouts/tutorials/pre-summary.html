@@ -1,4 +1,7 @@
 
 {{ range (.Paginate (.Pages.ByWeight)).Pages -}}
+<!-- {{- if .Params.featured }} -->
           {{ .Render "summary" }}
+        <!-- {{- end }} -->
+
         {{- end }}
