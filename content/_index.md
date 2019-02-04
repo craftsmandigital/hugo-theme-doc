@@ -5,4 +5,9 @@ draft: true
 type: "tutorials"
 ---
 
-## Dette er flatt content
+## Dette er content sin _index.md 
+Det som er fantastisk med denne er at den styrer hvordan alle poster under contetnt skal oppfore seg
+```
+type: "tutorials"
+```
+Det vil si at alt under content skal oppfore seg slik som under tutorial. (arver alt under layouts/tutorials)
