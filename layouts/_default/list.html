@@ -12,14 +12,14 @@
       <!-- Content -->
       <div class="container" style="min-height:56vh">
         {{- if .Data.Singular }}
-        <p class="title">{{ .Data.Singular | title }}: {{ .Title }}</p>
+        <p class="title">{{ .Data.Singular | title }}: {{ .Title }} </p>
         {{- else }}
-        <p class="title">{{ .Kind | title }}: {{ .Title }}</p>
+        <p class="title">{{ .Kind | title }}: {{ .Title }} </p>
         {{- end }}
-
-        {{- range .Paginator.Pages.ByWeight }}
-          {{ .Render "summary" }}
-        {{- end }}
+        <div class="content">
+          {{ .Content }}
+        </div>
+          {{ .Render "pre-summary" }}
       </div>
 
       <br>
