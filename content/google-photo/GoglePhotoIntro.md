@@ -17,6 +17,7 @@ weight: 10
 
 
 
+
 {{< figure src="/img/image8.jpg" >}}
 # Ta Kontroll over foto kaoset
 Skylagring er tingen! Skylagring legger til rette for:
