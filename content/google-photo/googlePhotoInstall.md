@@ -33,7 +33,7 @@ Finn ut av hvordan du kobler smarttelefonen på ditt trådløse nett.
 En må ha en google-konto(gmail) for å installere appen Google Foto på smarttelefon/nettbrett. \
 For å ha Google Foto tilgjengelig gjennom nettleseren din på datamaskinen din, må du også logge inn på Google kontoen din. Mange har en google-konto fra før. Noen har det uten å vite om det. Undersøk om du har en google-konto.
 
-[Her er en link til hvordan du oppretter en Google konto via en datamaskin.](https://docs.google.com/document/d/e/2PACX-1vS03KlfkAQ04sqX3HGxVwL7sJSQU77NvfLfDmqmKYksrWO5RPrzNYIJ556aS8KXrdOYnmyEos6yVZk_/pub)
+[Her er en link til hvordan du oppretter en Google konto via en datamaskin.](/tutorials/google-account/)
 
 Det er ikke helt sant at du absolutt trenger en google konto. Skal du bare se på bilder som andre har delt med deg fra Google Foto, så trenger du det ikke.
 
