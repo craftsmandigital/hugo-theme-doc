@@ -10,12 +10,12 @@ weight = 36
 
 {{< figure src="/img/bilder.png"  >}}
 
-
-{{< youtube NFjvUQpC9rI >}}
+***
 Se og finne bilder i Google Foto
 (Det er litt dårlig lyd på filmen, skru opp volumet)
+{{< youtube NFjvUQpC9rI >}}
 
 ***
-Åpningssiden i Google foto viser alle bildene dine sortert på dato. De nyeste bildene vil bli vist først. en må bare bla seg nedover for å se eldre bilder.
+> Åpningssiden i Google foto viser alle bildene dine sortert på dato. De nyeste bildene vil bli vist først. en må bare bla seg nedover for å se eldre bilder.
 
 
