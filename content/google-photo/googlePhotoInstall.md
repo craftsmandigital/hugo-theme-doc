@@ -1,12 +1,11 @@
 ---
-title: "Installer Google foto på din smarttelefon"
-date: 2019-01-30T15:24:51+01:00
-draft: false
-SectionPagesMenu: "main"
-weight: 20
+title: Installer Google foto på din smarttelefon
+date: 2019-01-30 14:24:51 +0000
+SectionPagesMenu: main
+weight: 32
 featured: true
----
 
+---
 {{< figure-group >}}
 {{< img src="/img/image3.png" >}}
 {{< img src="/img/image4.png" >}}
