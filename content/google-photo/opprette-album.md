@@ -27,7 +27,7 @@ Google foto har sin egen assistent. Jeg har ikke helt oversikt over alle funksjo
 {{% /column %}}
 
 {{% column %}}
-{{< figure src="/img/assistent.png"  >}}
+{{< figure src="/img/03googlefotoassistent.png"  >}}
 {{% /column %}}
 
 {{< /columns >}}
