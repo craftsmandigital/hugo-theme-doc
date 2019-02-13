@@ -8,4 +8,6 @@ weight = 36
 +++
 ## En innføring av hvordan en kan se på og finne bilder i Google foto
 
-{{< figure src="/img/img"  >}}
+{{< figure src="/img/img/bilder.png"  >}}
+
+{{< figure src="/img/GooglePhoto.png" >}}
