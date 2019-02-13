@@ -13,9 +13,8 @@ weight = 36
 ***
 
 > Det er litt dårlig lyd på filmen, skru opp volumet.
+
 {{< youtube NFjvUQpC9rI >}}
 
 ***
 Åpningssiden i Google foto viser alle bildene dine sortert på dato. De nyeste bildene vil bli vist først. en må bare bla seg nedover for å se eldre bilder.
-
-
