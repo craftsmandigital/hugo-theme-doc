@@ -2,7 +2,7 @@
 title: Gogle foto introduksjon
 date: 2019-01-29 11:49:03 +0000
 SectionPagesMenu: main
-weight: 10
+weight: 30
 
 ---
 {{< figure-group >}}
