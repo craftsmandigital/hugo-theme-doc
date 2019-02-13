@@ -38,3 +38,5 @@ fields:
   hidden: false
   default: false
   description: Sjekk av denne hvis du vil at siden skal listes opp paa forstesiden
+pages:
+- content/google-photo/google-foto-se-på-og-finne-bilder.md
