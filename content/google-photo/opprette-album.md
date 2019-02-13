@@ -10,11 +10,24 @@ weight = 38
 ## Opprette album
 
 {{< figure src="/img/albun.png"  >}}
+
+{{< columns >}}
+
+
+{{% column %}}
+{{< youtube SFnpYKmSbms >}}
+{{% /column %}}
+
+{{% column %}}
 Når en oppretter et album, så tar en ikke et bilde fra haugen med bilder, men bare en kopi fra de bilder som finnes tilgjengelige. Et bilde kan være i flere album. Her er en video:
 
 > Videoen omhandler bare dette med å opprette album, den tar ikke for seg alle de funksjoner en kan gjøre med et album.
+{{% /column %}}
 
-{{< youtube SFnpYKmSbms >}}
+{{< /columns >}}
+
+
+
 
 ***
 
