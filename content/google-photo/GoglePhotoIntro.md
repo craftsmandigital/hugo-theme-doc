@@ -47,84 +47,12 @@ Artikkelen er videobasert. Det meste av informasjonen rundt de forskjellige emne
 
 Det finnes mange skylagringstjenester der ute. (iCloud, google drive, OneDrive, DropBox +++). I dette kurset skal vi benytte oss av Google Foto sine tjenester:
 
-| Enhet | System| Link
-
-Nettbrett/smarttelefon
-
-Android
-
-App for Google Foto
-
-Ipad/Iphone
-
-Apple
-
-App for Google Foto
-
-PC/Mac
-
-WIndows/Ios
-
-Internet siden Google Foto
-
-  
-| Tables        | Are           | Cool  |
-
-| ------------- |-------------| -----|
-
-| col 3 is      | right-aligned | $1600 |
-
-| col 2 is      | centered      |   $12 |
-
-| zebra stripes | are neat      |    $1 |
-
 | Enhet | System| Link |
-
 | ------------- |-------------| -----|
-
 | Nettbrett/smarttelefon | Android | App for Google Foto |
-
 | Ipad/Iphone | Apple | App for Google Foto |
-
 | PC/Mac | WIndows/Ios | Internet siden Google Foto |
 
-<table>
-<tr>
-<td><strong>Enhet</strong>
-</td>
-<td><strong>System</strong>
-</td>
-<td><strong>Link</strong>
-</td>
-</tr>
-<tr>
-<td>Nettbrett/   
-smarttelefon
-</td>
-<td>Android
-</td>
-<td><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.photos&hl=no">App for Google Foto</a>
-</td>
-</tr>
-<tr>
-<td>Ipad/Iphone
-</td>
-<td>Apple
-</td>
-<td><a href="https://itunes.apple.com/app/apple-store/id962194608?mt=8">App for Google Foto</a>
-</td>
-</tr>
-<tr>
-<td>PC/Mac
-</td>
-<td>WIndows/Ios
-</td>
-<td><a href="https://photos.google.com/">Internet siden Google Foto</a>
-</td>
-</tr>
-</table>
-
-***
 
 ## Hvorfor Google Foto ?
 
