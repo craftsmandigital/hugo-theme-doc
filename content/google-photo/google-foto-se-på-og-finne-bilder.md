@@ -7,4 +7,6 @@ title = "Google Foto Se på og finne bilder"
 weight = 36
 
 +++
-sdsdsd
+## En innføring av hvordan en kan se på og finne bilder i Google foto
+
+{{< figure src="/img/img"  >}}
