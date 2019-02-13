@@ -16,7 +16,7 @@ weight: 10
 
 {{< figure src="/img/image8.jpg" >}}
 
-# Ta Kontroll over foto kaoset
+## Ta Kontroll over foto kaoset
 
 Skylagring er tingen! Skylagring legger til rette for:
 
@@ -53,6 +53,8 @@ Det finnes mange skylagringstjenester der ute. (iCloud, google drive, OneDrive, 
 | Ipad/Iphone | Apple | [App for Google Foto](https://itunes.apple.com/app/apple-store/id962194608?mt=8) |
 | PC/Mac | WIndows/Ios | [Internet siden Google Foto](https://photos.google.com/) |
 
+***
+
 ## Hvorfor Google Foto ?
 
 {{< figure src="/img/GooglePhoto.png" >}}
@@ -74,7 +76,7 @@ Det finnes også noen bakdeler med Google foto, det er jo tross alt gratis og en
 
 ***
 
-# Kom i gang med Google Foto
+## Kom i gang med Google Foto
 
 Oversikt over hvordan du kan komme i gang med Google Foto i stigende vanskelighetsgrad:
 
