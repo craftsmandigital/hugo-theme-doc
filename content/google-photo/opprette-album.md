@@ -8,7 +8,7 @@ weight = 38
 +++
 ## Opprette album
 
-{{< figure src="/img/albun.png"  >}}
+{{< figure src="/img/album.png"  >}}
 
 {{< columns >}}
 
