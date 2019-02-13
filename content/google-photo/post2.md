@@ -1,11 +1,10 @@
 ---
-title: "Post2"
-date: 2019-01-29T15:15:44+01:00
-draft: false 
-weight: 30
+title: Post2
+date: 2019-01-29 14:15:44 +0000
+weight: 34
 featured: 30
----
 
+---
 ## Dette er google foto post 2
 
 {{< columns >}}
