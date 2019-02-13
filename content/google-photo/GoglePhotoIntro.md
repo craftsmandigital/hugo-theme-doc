@@ -47,12 +47,11 @@ Artikkelen er videobasert. Det meste av informasjonen rundt de forskjellige emne
 
 Det finnes mange skylagringstjenester der ute. (iCloud, google drive, OneDrive, DropBox +++). I dette kurset skal vi benytte oss av Google Foto sine tjenester:
 
-| Enhet | System| Link |
-| ------------- |-------------| -----|
-| Nettbrett/smarttelefon | Android | App for Google Foto |
-| Ipad/Iphone | Apple | App for Google Foto |
-| PC/Mac | WIndows/Ios | Internet siden Google Foto |
-
+| Enhet | System | Link |
+| --- | --- | --- |
+| Nettbrett/smarttelefon | Android | [App for Google Foto](https://play.google.com/store/apps/details?id=com.google.android.apps.photos&hl=no) |
+| Ipad/Iphone | Apple | [App for Google Foto](https://itunes.apple.com/app/apple-store/id962194608?mt=8) |
+| PC/Mac | WIndows/Ios | [Internet siden Google Foto](https://photos.google.com/) |
 
 ## Hvorfor Google Foto ?
 
@@ -68,8 +67,8 @@ Det finnes mange skylagringstjenester der ute. (iCloud, google drive, OneDrive, 
 Det finnes også noen bakdeler med Google foto, det er jo tross alt gratis og enkelt.
 
 1. 
-   * De bildene som blir sikkerhetskopiert i gratis versjonen, blir minsket i størrelse. Med andre ord kvaliteten på bildene blir senket et hakk. Google foto minsker bildene på en veldig smart måte slik at de fleste ser ingen forskjell.   
-     → Bilder som er over 16 megapiksler vil bli minsket.   
+   * De bildene som blir sikkerhetskopiert i gratis versjonen, blir minsket i størrelse. Med andre ord kvaliteten på bildene blir senket et hakk. Google foto minsker bildene på en veldig smart måte slik at de fleste ser ingen forskjell.  
+     → Bilder som er over 16 megapiksler vil bli minsket.  
      → Filmer som har høyere oppløsning enn 1080p Full HD vil bli minsket.
 2. Det er jo en grunn til at Google har en gratis tjeneste som denne. Dette er jo tross alt Google. Et av de firmaene som tjener mest penger i hele verden. For de med spesielle behov utenom hobby fotografering, ville jeg ha lest vilkårene for bruk nøye.
 3. Dette er en tjeneste kun for foto og video. Tekst dokumenter(Word, EXCEL, PowerPoint etc.) og andre typer filer kan ikke benytte Google foto.
