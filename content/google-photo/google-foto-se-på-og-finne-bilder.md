@@ -10,11 +10,17 @@ weight = 36
 
 {{< figure src="/img/bilder.png"  >}}
 
-***
+{{% columns %}}
+
+{{% column %}}
+{{< youtube oVfepSPobI0 >}}
+{{% /column %}}
+
+{{% column %}}
+Åpningssiden i Google foto viser alle bildene dine sortert på dato. De nyeste bildene vil bli vist først. en må bare bla seg nedover for å se eldre bilder.
+
 
 > Det er litt dårlig lyd på filmen, skru opp volumet.
+{{% /column %}}
 
-{{< youtube oVfepSPobI0 >}}
-
-***
-Åpningssiden i Google foto viser alle bildene dine sortert på dato. De nyeste bildene vil bli vist først. en må bare bla seg nedover for å se eldre bilder.
+{{% /columns %}}

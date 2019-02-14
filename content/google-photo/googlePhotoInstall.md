@@ -42,7 +42,7 @@ Det er ikke helt sant at du absolutt trenger en google konto. Skal du bare se p�
 
 
 
-# Installere Google Foto På din smarttelefon/nettbrett
+## Installere Google Foto På din smarttelefon/nettbrett
 
 
 {{< figure-group >}}
@@ -54,7 +54,7 @@ Når du har installert Google foto, så har du faktisk en veldig god backup løs
 
 Har du flere enheter(smarttelefon/nettbrett) du benytter til å ta eller se på bilder med, så Installer Google foto på disse enhetene også( Benytt samme google-konto på enhetene).  alle bildene du tar vil være tilgjengelig på alle enhetene.
 
-Senere i artikkelserien skal vi se på hvordan en kan laste opp alle bildene på datamaskinen til Google foto. Det hadde vært på sin plass å skrive litt om det her, men dette er litt høyere vanskelighetsgrad, så mer om det senere. Trykk på [denne lenken](#heading=h.r26r08na0ke1) hvis du ønsker å se på dette med en gang.
+Senere i artikkelserien skal vi se på hvordan en kan laste opp alle bildene på datamaskinen til Google foto. Det hadde vært på sin plass å skrive litt om det her, men dette er litt høyere vanskelighetsgrad, så mer om det senere. Trykk på [denne lenken](../sikkerhetskopiering-og-synkronisering/) hvis du ønsker å se på dette med en gang.
 
 
 
