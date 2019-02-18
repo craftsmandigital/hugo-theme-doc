@@ -14,7 +14,7 @@
         {{- if .Data.Singular }}
         <p class="title">{{ .Data.Singular | title }}: {{ .Title }} </p>
         {{- else }}
-        <p class="title">{{ .Kind | title }}: {{ .Title }} </p>
+        <p class="title"> {{ .Title }} </p>
         {{- end }}
         <div class="content">
           {{ .Content }}

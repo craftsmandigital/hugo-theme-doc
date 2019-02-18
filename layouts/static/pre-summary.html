@@ -1,6 +1,5 @@
 
-{{ range (.Paginate (where .Pages "Params.featured")).Pages -}}
-<h1>this is static pre summary</h1>
+        {{ range (.Paginate (where .Pages "Params.featured" "=" true)).Pages -}}
           {{ .Render "summary" }}
 
         {{- end }}

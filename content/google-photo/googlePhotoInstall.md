@@ -3,7 +3,7 @@ title: Installer Google foto på din smarttelefon
 date: 2019-01-30 14:24:51 +0000
 SectionPagesMenu: main
 weight: 32
-featured: true
+featured: false
 
 ---
 {{< figure-group >}}
