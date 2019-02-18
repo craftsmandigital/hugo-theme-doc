@@ -15,7 +15,10 @@
           <div class="column">
             <!-- Content -->
             <div style="min-height:56vh">
-                {{ .Render "pre-summary" }}
+        {{ range (.Paginate (where .Pages "Params.featured" "=" true)).Pages -}}
+          {{ .Render "summary" }}
+
+        {{- end }}
             </div>
 
             <br>
