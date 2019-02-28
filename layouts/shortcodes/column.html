@@ -1,3 +1,13 @@
-  <div class="column is-6 has-background-white-ter">
+{{ .Scratch.Set "class" "column is-6 has-background-white-ter" }}
+
+{{- with .Parent -}}
+
+   {{ with .Get "class"}} 
+      {{ $.Scratch.Add "class" . }}
+   {{ end }}
+
+{{- end }}
+
+  <div class="{{ .Scratch.Get "class" }}">
     {{ .Inner }}
   </div>

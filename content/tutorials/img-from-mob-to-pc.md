@@ -66,12 +66,12 @@ Den nederste delen av skjermen beskriver hva slags lagringsenheter som er koblet
 
 
 
-{{< columns >}}
+{{< columns class="is-mobile">}}
 
 
 
 
-{{% column %}}
+{{% column class="is_mobile" %}}
 
 Nå er du klar for å koble mobiltelefonen din til pc-en din.  gjør følgende:
 
