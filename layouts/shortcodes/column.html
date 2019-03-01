@@ -1,15 +1,26 @@
-{{ .Scratch.Set "class" "column is-6 has-background-white-ter" }}
-{{/* The stuff under is working perfectly
+{{ .Scratch.Set "class" "column has-background-white-ter" }}
+{{/* The stuff under is working perfectly */}}
 {{- with .Parent -}}
 
-   {{ with .Get "class"}} 
+   {{ with .Get "_class"}} 
       {{ $.Scratch.Add "class" " " }}
       {{ $.Scratch.Add "class" . }}
    {{ end }}
 
+   {{ with .Get "colsizes"}} 
+      {{ $.Scratch.Set "colsizes" (split . " ") }}
+   {{ else }}
+      {{/* Setting default value */}}
+      {{ $.Scratch.Add "class" " is-6" }}
+   {{ end }}
+
 {{- end }}
 
-*/}}
+
+
+{{ range .Scratch.Get "colsizes" }}
+## (koser meg i løkka ---> {{ . }})
+{{ end }}
   <div class="{{ .Scratch.Get "class" }}">
     {{ .Inner }}
   </div>
