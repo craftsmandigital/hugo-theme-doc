@@ -5,6 +5,8 @@ featured = false
 title = "Dele bilder"
 weight = 39
 
+categories = ["opplæring"]
+tags = ["google", "Deling", "foto"]
 +++
 {{< figure src="/img/deling.png"  >}}
 ### Det finnes flere måter å dele bilder på:

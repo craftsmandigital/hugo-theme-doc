@@ -3,6 +3,11 @@ title: "Utforme og huske passord"
 date: 2019-02-19T12:34:40+01:00
 draft: false
 weight: 40
+categories:
+ - opplæring
+tags:
+ - passord
+ - datasikkerhet
 ---
 ## Hvordan utforme og huske passord
 

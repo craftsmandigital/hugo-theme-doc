@@ -5,6 +5,8 @@ featured = false
 title = "Installere Google Sikkerhetskopiering og synkronisering"
 weight = 42 
 
+categories = ["opplæring"]
+tags = ["google", "data lagring", "foto", "filsystem"]
 +++
 
 Installere Google Sikkerhetskopiering og synkronisering å din PC/Mac for å laste opp dine bilder til Google Foto. Bilder du har liggende på din datamaskin, bilder du har overført til datamaskinen i fra andre enheter som kamera, videokamera etc.

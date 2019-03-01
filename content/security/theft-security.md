@@ -3,6 +3,10 @@ title: "Tyveri sikkring av din enhet"
 date: 2019-02-19T12:34:40+01:00
 draft: false
 weight: 20
+categories:
+ - opplæring
+tags:
+ - datasikkerhet
 ---
 
 ## Vær føre var i tilfellet din enhet forsvinner, eller den blir stjålet.

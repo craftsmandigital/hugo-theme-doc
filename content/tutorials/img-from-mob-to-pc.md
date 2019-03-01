@@ -3,6 +3,12 @@ title: "Kopiere bilde fra mobil til datamaskin"
 date: 2019-02-04T14:17:13+01:00
 featured: true
 draft: false
+categories:
+ - opplæring
+tags:
+ - grunnleggende
+ - data lagring
+ - filsystem
 ---
 
 
