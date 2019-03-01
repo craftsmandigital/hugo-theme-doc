@@ -18,4 +18,11 @@ draft: false
 {{% /column %}}
 
 {{% column %}}
+
+- kolonne 3
+{{% /column %}}
+
+
+
+
 {{< /columns >}}

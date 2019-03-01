@@ -17,10 +17,13 @@
 {{- end }}
 
 
+{{ .Page.Scratch.Add "count" 1 }}
+{{ $i := .Page.Scratch.Get "count" }}
+  <div class="{{ .Scratch.Get "class" }}">
+        Running Count: {{ (printf "%d" $i ) }}
 
 {{ range .Scratch.Get "colsizes" }}
 ## (koser meg i løkka ---> {{ . }})
 {{ end }}
-  <div class="{{ .Scratch.Get "class" }}">
     {{ .Inner }}
   </div>
