@@ -22,8 +22,20 @@
   <div class="{{ .Scratch.Get "class" }}">
         Running Count: {{ (printf "%d" $i ) }}
 
-{{ range .Scratch.Get "colsizes" }}
-## (koser meg i løkka ---> {{ . }})
-{{ end }}
+
+
+
+{{range $index, $element := .Scratch.Get "colsizes" }}
+  {{/*index:{{ $index }} 
+        name:{{ $element }} 
+       */}}
+        {{ if eq ( sub $i 1 ) $index }}
+           her skal det vere: {{ $element }}
+        {{ end }}
+    {{ end }}
+
+
+
+
     {{ .Inner }}
   </div>
