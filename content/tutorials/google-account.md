@@ -3,6 +3,12 @@ title: "Slik oppretter du en Google konto(Gmail)"
 date: 2019-02-04T14:17:13+01:00
 featured: true
 draft: false
+categories:
+ - opplæring
+tags:
+ - grunnleggende
+ - google
+ - e-post
 ---
 Det å opprette en Google konto er det samme som å opprette en Gmail adresse for Google sin e-post tjeneste. Har du tilgang til en Gmail adresse, så har du god tilgang til alle de verktøyene som Google tilbyr. 
 

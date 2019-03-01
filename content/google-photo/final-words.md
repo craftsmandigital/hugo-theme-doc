@@ -4,8 +4,16 @@ date = "2019-02-12T23:00:00+00:00"
 featured = false
 title = "Til Slutt"
 weight = 43 
+categories = ["opplæring"]
+tags = ["google"]
 +++
 
+categories:
+ - opplæring
+tags:
+ - grunnleggende
+ - google
+ - e-post
 Det er mange ting i Google Foto som det ikke har blitt skrevet om her. Men jeg tror jeg har fått med meg de viktigste funksjonene. Blant de tingene som ikke har tatt med her er:
 
 - Det finnes enkle bilderedigerings muligheter. Trykk deg inn på et enkelt bilde som du ikke er redd for å miste. Øverst i høyre finnes et valg som heter Rediger. Her er det bare å prøve og feile for å finne ut av hvordan ting fungerer.

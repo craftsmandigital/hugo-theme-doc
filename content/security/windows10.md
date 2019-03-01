@@ -3,6 +3,11 @@ title: "Installasjon av apper på Windows 10 enheter"
 date: 2019-02-19T12:34:40+01:00
 draft: false
 weight: 30
+categories:
+ - opplæring
+tags:
+ - windows10
+ - datasikkerhet
 ---
 ## Forhåndsregler ved installasjon av apper på Windows 10 enheter
 

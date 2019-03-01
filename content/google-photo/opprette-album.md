@@ -5,6 +5,8 @@ featured = false
 title = "Opprette album og assistenten"
 weight = 38
 
+categories = ["opplæring"]
+tags = ["google", "foto"]
 +++
 ## Opprette album
 

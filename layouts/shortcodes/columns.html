@@ -1,3 +1,10 @@
-<div class="columns is-multiline">
+{{ .Scratch.Set "class" "columns is-multiline" }}
+
+{{ with .Get "class"}}
+   {{ $.Scratch.Add "class" " " }}
+   {{ $.Scratch.Add "class" . }}
+{{ end }}
+
+<div class="{{ .Scratch.Get "class" }}">
   {{ .Inner }}
 </div>

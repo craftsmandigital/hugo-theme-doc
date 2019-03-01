@@ -3,6 +3,12 @@ title: "Kopiere bilde fra mobil til datamaskin"
 date: 2019-02-04T14:17:13+01:00
 featured: true
 draft: false
+categories:
+ - opplæring
+tags:
+ - grunnleggende
+ - data lagring
+ - filsystem
 ---
 
 
@@ -66,12 +72,12 @@ Den nederste delen av skjermen beskriver hva slags lagringsenheter som er koblet
 
 
 
-{{< columns >}}
+{{< columns class="is-mobile">}}
 
 
 
 
-{{% column %}}
+{{% column class="is_mobile" %}}
 
 Nå er du klar for å koble mobiltelefonen din til pc-en din.  gjør følgende:
 

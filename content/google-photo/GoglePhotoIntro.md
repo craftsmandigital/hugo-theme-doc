@@ -4,6 +4,12 @@ date: 2019-01-29 11:49:03 +0000
 SectionPagesMenu: main
 weight: 30
 featured: true
+categories:
+ - opplæring
+tags:
+ - intro 
+ - google
+ - foto
 
 ---
 {{< figure-group >}}
