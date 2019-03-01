@@ -203,7 +203,7 @@ Dersom du satt opp din mobil til å benytte et sd-kort for bildelagring,  så er
 
 
 
-{{< columns >}}
+{{< columns class="is-mobile">}}
 
 
 
