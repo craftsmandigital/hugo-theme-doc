@@ -18,22 +18,22 @@
 
 
 {{ .Page.Scratch.Add "count" 1 }}
-{{ $i := .Page.Scratch.Get "count" }}
+{{ $i := sub (.Page.Scratch.Get "count") 1 }}
+{{/* {{ $i := mod $i (len (.Page.Scratch.Get "colsizes")) }} */}}
+
+
+
   <div class="{{ .Scratch.Get "class" }}">
+
+
+{{ with .Scratch.Get "colsizes" }}
+{{ $colCount :=  len . }}
+{{ $i = mod $i $colCount }}
+{{ $element := ( index . $i ) }}
+  {{ $element }}
+{{ end }}
+
         Running Count: {{ (printf "%d" $i ) }}
-
-
-
-
-{{range $index, $element := .Scratch.Get "colsizes" }}
-  {{/*index:{{ $index }} 
-        name:{{ $element }} 
-       */}}
-        {{ if eq ( sub $i 1 ) $index }}
-           her skal det vere: {{ $element }}
-        {{ end }}
-    {{ end }}
-
 
 
 

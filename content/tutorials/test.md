@@ -22,7 +22,10 @@ draft: false
 - kolonne 3
 {{% /column %}}
 
-
+{{% column %}}
+- kolonne 4
+{{% /column %}}
 
 
 {{< /columns >}}
+{{< highlight language>}}daeet blir morro å se på{{< /highlight >}}
