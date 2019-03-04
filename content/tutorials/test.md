@@ -5,7 +5,7 @@ draft: false
 ---
 
 
-{{< columns colsizes="2 4 6" >}}
+{{< columns colsizes="2 4 6" _class="box" >}}
 
 
 {{% column %}}

@@ -6,14 +6,16 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
 
 
 {{ $colsizes := "6 6" }}
+{{ $class := "column has-background-white-ter" }}
 
-{{ .Scratch.Set "class" "column has-background-white-ter" }}
+
+
+
 {{/* The stuff under is working perfectly */}}
 {{- with .Parent -}}
 
    {{ with .Get "_class"}} 
-      {{ $.Scratch.Add "class" " " }}
-      {{ $.Scratch.Add "class" . }}
+         {{ $class = (printf "%s %s" $class . ) }}
    {{ end }}
 
    {{ with .Get "colsizes"}} 
@@ -57,7 +59,7 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
 
 
 
-  <div class="{{ .Scratch.Get "class" }}">
+  <div class="{{ $class }}">
 
 
 {{ with .Scratch.Get "colsizes" }}
