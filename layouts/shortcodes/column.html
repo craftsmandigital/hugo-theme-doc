@@ -1,3 +1,12 @@
+{{/* 
+
+This shortcode is dependent of the columns.html shortcode and can not live outside of columns.html
+
+ */}}
+
+
+
+
 {{ .Scratch.Set "class" "column has-background-white-ter" }}
 {{/* The stuff under is working perfectly */}}
 {{- with .Parent -}}
@@ -14,6 +23,10 @@
       {{ $.Scratch.Add "class" " is-6" }}
    {{ end }}
 
+{{ else }}
+
+    {{ errorf "The error is inside the page %s\nThis shortcode {{ column }} must be inside {{< columns >}} shortcode and can not live outside of {{< columns >}}\n" .Page.Path }}
+  
 {{- end }}
 
 
