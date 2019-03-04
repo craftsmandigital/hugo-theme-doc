@@ -5,7 +5,7 @@ draft: false
 ---
 
 
-{{< columns colsizes="detta var spess" >}}
+{{< columns colsizes="4 4 6" >}}
 
 
 {{% column %}}

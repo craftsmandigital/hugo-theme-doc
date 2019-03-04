@@ -27,7 +27,16 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
 
     {{ errorf "The error is inside the page %s\nThis shortcode {{ column }} must be inside {{< columns >}} shortcode and can not live outside of {{< columns >}}\n" .Page.Path }}
   
-{{- end }}
+{{ end }}
+
+{{ $sum12 := 0 }}
+{{ range $.Scratch.Get "colsizes" }}
+
+{{ $sum12 = add $sum12 (int .) }}
+kolonne sum {{ $sum12 }}
+{{ end }}
+
+
 
 
 {{ .Page.Scratch.Add "count" 1 }}
