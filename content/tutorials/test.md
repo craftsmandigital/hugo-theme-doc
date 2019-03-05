@@ -4,8 +4,12 @@ date: 2019-03-01T10:43:34+01:00
 draft: false
 ---
 
+<!-- {{< columns colsizes="2 4 6" _class="box" settings="zebra" >}} -->
 
-{{< columns colsizes="2 4 6" _class="box" >}}
+
+det er spessielt at ting bare blir overskrevet
+
+{{< columns colsizes="2 4 6" settings="zebra" >}}
 
 
 {{% column %}}
@@ -20,6 +24,94 @@ draft: false
 {{% column %}}
 
 - kolonne 3
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
+{{% /column %}}
+
+{{% column %}}
+- kolonne 4
 {{% /column %}}
 
 {{% column %}}

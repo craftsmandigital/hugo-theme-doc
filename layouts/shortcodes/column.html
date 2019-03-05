@@ -6,8 +6,9 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
 
 
 {{ $colsizes := "6 6" }}
-{{ $class := "column has-background-white-ter" }}
-
+{{ $class := "column" }}
+{{ $dafaultColor := "has-background-white-ter" }}
+{{ $settings := "" }}
 
 {{/* The stuff under is working perfectly */}}
 {{- with .Parent -}}
@@ -19,6 +20,11 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
    {{ with .Get "colsizes"}} 
       {{ $colsizes = . }} {{/* Overvite default values */}} 
    {{ end }}
+   
+   
+   {{ with .Get "settings"}} 
+      {{ $settings = . }} {{/* Overvite default values */}} 
+   {{ end }}
 
 {{ else }}
     {{ errorf "The error is inside the page %s\nThis shortcode {{ column }} must be inside {{< columns >}} shortcode and can not live outside of {{< columns >}}\n" .Page.Path }}
@@ -26,7 +32,7 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
 
 
 {{ .Page.Scratch.Add "count" 1 }}
-{{ $hoizontalColCounter := sub (.Page.Scratch.Get "count") 1 }} {{/* array count starts at 0 */}}
+{{ $horizontalColCounter := sub (.Page.Scratch.Get "count") 1 }} {{/* array count starts at 0 */}}
 
 
 
@@ -34,12 +40,22 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
 {{ $sum12 := 0 }}   
 {{ with (split $colsizes " ")  }}
   {{ $colCount :=  len . }}
-  {{ $hoizontalColCounter = mod $hoizontalColCounter $colCount }}
+
+
+
+  {{ $zebraIndicator := modBool (math.Floor (div $horizontalColCounter $colCount)) 2 }}
+  {{ if and (eq $settings "zebra") $zebraIndicator }}
+    {{ $class = (printf "%s %s" $class $dafaultColor ) }}
+  {{ end }}
+
+
+
+  {{ $horizontalColCounter = mod $horizontalColCounter $colCount }}
   {{ range . }}
     {{ $sum12 = add $sum12 (int .) }}
   {{ end }} 
   {{/* Appending colzize value at $horizontalColCounter */}}
-  {{ $class = (printf "%s is-%s" $class ( index . $hoizontalColCounter) ) }}
+  {{ $class = (printf "%s is-%s" $class ( index . $horizontalColCounter) ) }}
 {{ end }}
 
 {{ if ne $sum12 12 }}
@@ -50,7 +66,8 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
 
   <div class="{{ $class }}">
       <p>class: {{ $class }}</p>
-      <p>colCount: {{ (printf "%d" $hoizontalColCounter) }}</p>
+      <p>colCount: {{ (printf "%d" $horizontalColCounter) }}</p>
+      {{/* <p>$zebraIndicator : {{ (printf "%b" $zebraIndicator  ) }}</p> */}}
 
     {{ .Inner }}
   </div>
