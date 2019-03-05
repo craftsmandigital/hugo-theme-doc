@@ -8,9 +8,9 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
 {{ $colsizes := "6 6" }}
 {{ $class := "column" }}
 {{ $dafaultColor := "has-background-white-ter" }}
-{{ $settings := "" }}
+{{ $settings := "zebra" }}
 
-{{/* The stuff under is working perfectly */}}
+{{/* Getting parameters from the parent shortcode colums */}}
 {{- with .Parent -}}
 
    {{ with .Get "_class"}} 
@@ -36,13 +36,12 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
 
 
 
-{{/* if sum colsizes is difrent from 12 then print error message */}}
-{{ $sum12 := 0 }}   
 {{ with (split $colsizes " ")  }}
   {{ $colCount :=  len . }}
+  {{ $colInRow := mod $horizontalColCounter $colCount }}
 
 
-
+  {{/* Adding zebra stripes to even rows*/}}
   {{ $zebraIndicator := modBool (math.Floor (div $horizontalColCounter $colCount)) 2 }}
   {{ if and (eq $settings "zebra") $zebraIndicator }}
     {{ $class = (printf "%s %s" $class $dafaultColor ) }}
@@ -50,24 +49,38 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
 
 
 
-  {{ $horizontalColCounter = mod $horizontalColCounter $colCount }}
+  {{/* Adding chess patterns to items (the stuff is dependent of the $zebraIndicator)*/}}
+  {{ if (eq $settings "chess") }}
+    {{ $chess := false }}
+    {{ if $zebraIndicator }}
+      {{ $chess = modBool $colInRow 2 }}
+    {{ else }}
+      {{/* just adding 1 to get even an odd values on same column */}}
+      {{ $chess = modBool (add $colInRow 1) 2 }} 
+    {{ end }}
+    {{ if $chess }}
+      {{ $class = (printf "%s %s" $class $dafaultColor ) }}
+    {{ end }}
+  {{ end }}
+
+
+  {{/* Appending colzize value at $colInRow */}}
+  {{ $class = (printf "%s is-%s" $class ( index . $colInRow) ) }}
+
+
+
+  {{/* if sum colsizes is difrent from 12 then print error message */}}
+  {{ $sum12 := 0 }}   
   {{ range . }}
     {{ $sum12 = add $sum12 (int .) }}
   {{ end }} 
-  {{/* Appending colzize value at $horizontalColCounter */}}
-  {{ $class = (printf "%s is-%s" $class ( index . $horizontalColCounter) ) }}
-{{ end }}
+  {{ if ne $sum12 12 }}
+    {{ errorf "The error is inside page: %s\nshortcode: {{ column colsizes=\"%s\" }}\nThe colsizes=\"%s\" sum must be equal to 12 \n" .Page.Path  $colsizes $colsizes }}
+  {{ end }}
 
-{{ if ne $sum12 12 }}
-        {{ errorf "The error is inside page: %s\nshortcode: {{ column colsizes=\"%s\" }}\nThe colsizes=\"%s\" sum must be equal to 12 \n" .Page.Path  $colsizes $colsizes }}
 {{ end }}
-
 
 
   <div class="{{ $class }}">
-      <p>class: {{ $class }}</p>
-      <p>colCount: {{ (printf "%d" $horizontalColCounter) }}</p>
-      {{/* <p>$zebraIndicator : {{ (printf "%b" $zebraIndicator  ) }}</p> */}}
-
     {{ .Inner }}
   </div>
