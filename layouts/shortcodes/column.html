@@ -9,78 +9,48 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
 {{ $class := "column has-background-white-ter" }}
 
 
-
-
 {{/* The stuff under is working perfectly */}}
 {{- with .Parent -}}
 
    {{ with .Get "_class"}} 
-         {{ $class = (printf "%s %s" $class . ) }}
+         {{ $class = (printf "%s %s" $class . ) }}{{/* Append to default values for column */}} 
    {{ end }}
 
    {{ with .Get "colsizes"}} 
-      {{/* {{ $.Scratch.Set "colsizes" (split . " ") }} */}}
-      {{ $colsizes = . }}
-      {{/* {{ $.Scratch.Add "class" " is-6" }} */}}
+      {{ $colsizes = . }} {{/* Overvite default values */}} 
    {{ end }}
 
 {{ else }}
-
     {{ errorf "The error is inside the page %s\nThis shortcode {{ column }} must be inside {{< columns >}} shortcode and can not live outside of {{< columns >}}\n" .Page.Path }}
-  
 {{ end }}
 
 
 {{ .Page.Scratch.Add "count" 1 }}
-{{ $i := sub (.Page.Scratch.Get "count") 1 }}
+{{ $hoizontalColCounter := sub (.Page.Scratch.Get "count") 1 }} {{/* array count starts at 0 */}}
 
 
 
-
-
-{{ $sum12 := 0 }}
+{{/* if sum colsizes is difrent from 12 then print error message */}}
+{{ $sum12 := 0 }}   
 {{ with (split $colsizes " ")  }}
   {{ $colCount :=  len . }}
+  {{ $hoizontalColCounter = mod $hoizontalColCounter $colCount }}
   {{ range . }}
-    {{ $i = mod $i $colCount }}
-    {{ $element := ( index . $i ) }}
     {{ $sum12 = add $sum12 (int .) }}
   {{ end }} 
-  {{ $class = (printf "%s is-%s" $class ( index . $i) ) }}
+  {{/* Appending colzize value at $horizontalColCounter */}}
+  {{ $class = (printf "%s is-%s" $class ( index . $hoizontalColCounter) ) }}
 {{ end }}
-
 
 {{ if ne $sum12 12 }}
-
         {{ errorf "The error is inside page: %s\nshortcode: {{ column colsizes=\"%s\" }}\nThe colsizes=\"%s\" sum must be equal to 12 \n" .Page.Path  $colsizes $colsizes }}
 {{ end }}
-
-{{/*  
-{{ range $.Scratch.Get "colsizes" }}
-  {{ $sum12 = add $sum12 (int .) }}
-{{ end }}
-
-{{ $sum12 }} */}}
-
-
-
-{{/* {{ $i := mod $i (len (.Page.Scratch.Get "colsizes")) }} */}}
 
 
 
   <div class="{{ $class }}">
-
-{{/* 
-{{ with .Scratch.Get "colsizes" }}
-   {{ $colCount :=  len . }}
-   {{ $i = mod $i $colCount }}
-   {{ $element := ( index . $i ) }}
-   {{ $element }}
-{{ end }} */}}
-
-        {{ (printf "class: %s   ------     colcount: %d" $class $i) }}
-
-
+      <p>class: {{ $class }}</p>
+      <p>colCount: {{ (printf "%d" $hoizontalColCounter) }}</p>
 
     {{ .Inner }}
   </div>
