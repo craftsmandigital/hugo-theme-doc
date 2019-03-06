@@ -47,6 +47,14 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
   {{ $colInRow := mod $horizontalColCounter $colCount }}
 
 
+  {{ $sum12 := 0 }}   
+  {{ range . }}
+    {{ $sum12 = add $sum12 (int .) }}
+  {{ end }} 
+  {{ if ne $sum12 12 }}
+    {{ errorf "The error is inside page: %s\nshortcode: {{ column colsizes=\"%s\" }}\nThe colsizes=\"%s\" sum must be equal to 12 \n" $.Page.Path $colsizes $colsizes }}
+  {{ end }}
+
   {{/* Adding zebra stripes to even rows*/}}
   {{ $zebraIndicator := modBool (math.Floor (div $horizontalColCounter $colCount)) 2 }}
   {{ if and (in $settings "zebra") $zebraIndicator }}
@@ -77,15 +85,6 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
   {{ end }}
   {{ $class = (printf "%s is-%s" $class ( index . $colInRow) ) }}
 
-
-  {{/* if sum colsizes is difrent from 12 then print error message */}}
-  {{ $sum12 := 0 }}   
-  {{ range . }}
-    {{ $sum12 = add $sum12 (int .) }}
-  {{ end }} 
-  {{ if ne $sum12 12 }}
-    {{ errorf "The error is inside page: %s\nshortcode: {{ column colsizes=\"%s\" }}\nThe colsizes=\"%s\" sum must be equal to 12 \n" .Page.Path $colsizes $colsizes }}
-  {{ end }}
 
 {{ end }}
 
