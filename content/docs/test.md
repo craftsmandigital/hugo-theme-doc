@@ -7,7 +7,7 @@ draft: false
 
 
 
-{{< columns colsizes="    8 asdf4 df sadf  " >}}
+{{< columns colsizes="    8 asdf4 df sadf  " _class="box" settings="chess mirror" >}}
 
 
 {{% column %}}
@@ -55,6 +55,33 @@ XXXXXXXXXX
 {{% column %}}
 XXXXXXXXXX
 {{% /column %}}
+
+
+
+
+
+
+
+{{% column %}}
+XXXXXXXXXX
+{{% /column %}}
+
+
+
+
+
+{{% column %}}
+XXXXXXXXXX
+{{% /column %}}
+
+
+
+
+
+{{% column %}}
+XXXXXXXXXX
+{{% /column %}}
+
 
 
 

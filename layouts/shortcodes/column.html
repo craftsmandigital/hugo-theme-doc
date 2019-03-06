@@ -68,14 +68,12 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
 
 
   {{/* Appending colzize value at $colInRow */}}
+  {{/* Mirroring collumns with zebra true*/}}
   {{ if and (in $settings "mirror") $zebraIndicator}}
-  {{ $colInRow = sub (sub $colCount $colInRow ) 1 }}
-  {{ $class = (printf "%s is-%s" $class ( index . $colInRow) ) }}
-  {{ else }}
-
-  {{ $class = (printf "%s is-%s" $class ( index . $colInRow) ) }}
-
+    {{ $colInRow = sub (sub $colCount $colInRow ) 1 }}
   {{ end }}
+  {{ $class = (printf "%s is-%s" $class ( index . $colInRow) ) }}
+
 
   {{/* if sum colsizes is difrent from 12 then print error message */}}
   {{ $sum12 := 0 }}   
