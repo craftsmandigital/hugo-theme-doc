@@ -19,6 +19,9 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
 
    {{ with .Get "colsizes"}} 
       {{ $colsizes = . }} {{/* Overvite default values */}} 
+      {{/* first removing non numbers exept spaces, then removing leading | trailing | extra spaces */}}
+      {{/* https://stackoverflow.com/questions/19020079/removing-leading-trailing-and-multiple-spaces-within-a-string */}}
+      {{ $colsizes = $colsizes  | replaceRE "[^0-9\\s]+" "" | replaceRE "^\\s+|\\s+$|\\s+\\(?=\\s\\)" ""  }} {{/* Overvite default values */}} 
    {{ end }}
    
    
@@ -75,10 +78,12 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
     {{ $sum12 = add $sum12 (int .) }}
   {{ end }} 
   {{ if ne $sum12 12 }}
-    {{ errorf "The error is inside page: %s\nshortcode: {{ column colsizes=\"%s\" }}\nThe colsizes=\"%s\" sum must be equal to 12 \n" .Page.Path  $colsizes $colsizes }}
+    {{ errorf "The error is inside page: %s\nshortcode: {{ column colsizes=\"%s\" }}\nThe colsizes=\"%s\" sum must be equal to 12 \n" .Page.Path $colsizes $colsizes }}
   {{ end }}
 
 {{ end }}
+
+
 
 
   <div class="{{ $class }}">
