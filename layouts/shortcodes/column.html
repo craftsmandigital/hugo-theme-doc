@@ -46,14 +46,14 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
 
   {{/* Adding zebra stripes to even rows*/}}
   {{ $zebraIndicator := modBool (math.Floor (div $horizontalColCounter $colCount)) 2 }}
-  {{ if and (eq $settings "zebra") $zebraIndicator }}
+  {{ if and (in $settings "zebra") $zebraIndicator }}
     {{ $class = (printf "%s %s" $class $dafaultColor ) }}
   {{ end }}
 
 
 
   {{/* Adding chess patterns to items (the stuff is dependent of the $zebraIndicator)*/}}
-  {{ if (eq $settings "chess") }}
+  {{ if (in $settings "chess") }}
     {{ $chess := false }}
     {{ if $zebraIndicator }}
       {{ $chess = modBool $colInRow 2 }}
@@ -68,9 +68,14 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
 
 
   {{/* Appending colzize value at $colInRow */}}
+  {{ if and (in $settings "mirror") $zebraIndicator}}
+  {{ $colInRow = sub (sub $colCount $colInRow ) 1 }}
+  {{ $class = (printf "%s is-%s" $class ( index . $colInRow) ) }}
+  {{ else }}
+
   {{ $class = (printf "%s is-%s" $class ( index . $colInRow) ) }}
 
-
+  {{ end }}
 
   {{/* if sum colsizes is difrent from 12 then print error message */}}
   {{ $sum12 := 0 }}   
