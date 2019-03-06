@@ -12,7 +12,7 @@ tags:
 ---
 
 
-{{< columns colsizes="2 4 6" settings="zebra mirror" _class="box">}}
+{{< columns colsizes=" oo oo2 4 s6f sa " settings="zebra mirror" _class="box">}}
 
 
 
