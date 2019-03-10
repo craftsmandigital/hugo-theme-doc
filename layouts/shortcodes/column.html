@@ -33,12 +33,12 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
    {{ end }}
 
 {{ else }}
-    {{ errorf "The error is inside the page %s\nThis shortcode {{ column }} must be inside {{< columns >}} shortcode and can not live outside of {{< columns >}}\n" .Page.Path }}
+    {{ errorf "The error is inside the page %s\nThis shortcode {{ column }} must be inside {{< columns >}} shortcode and can not live outside of {{< columns >}}\n" $.Page.Path }}
 {{ end }}
 
 
-{{ .Page.Scratch.Add "count" 1 }}
-{{ $horizontalColCounter := sub (.Page.Scratch.Get "count") 1 }} {{/* array count starts at 0 */}}
+{{ $.Page.Scratch.Add "count" 1 }}
+{{ $horizontalColCounter := sub ($.Page.Scratch.Get "count") 1 }} {{/* array count starts at 0 */}}
 
 
 
@@ -86,11 +86,24 @@ This shortcode is dependent of the columns.html shortcode and can not live outsi
   {{ $class = (printf "%s is-%s" $class ( index . $colInRow) ) }}
 
 
+<<<<<<< HEAD
+=======
+  {{/* if sum colsizes is difrent from 12 then print error message */}}
+  {{ $sum12 := 0 }}   
+  {{ range . }}
+    {{ $sum12 = add $sum12 (int .) }}
+  {{ end }} 
+  {{ if ne $sum12 12 }}
+    {{ errorf "The error is inside page: %s\nshortcode: {{ column colsizes=\"%s\" }}\nThe colsizes=\"%s\" sum must be equal to 12 \n" $.Page.Path $colsizes $colsizes }}
+  {{ end }}
+
+>>>>>>> dev
 {{ end }}
 
 
 
 
   <div class="{{ $class }}">
+  {{/* <p>Shild count: {{ $horizontalColCounter  }}</p> */}}
     {{ .Inner }}
   </div>
