@@ -1,5 +1,5 @@
-{{ $class := "columns is-multiline" }}
 
+{{ $class := "columns is-multiline" }}
 
 
 
@@ -14,10 +14,9 @@
 
 
 {{ with .Get "class"}}
-   {{ $.Scratch.Add "class" " " }}
-   {{ $.Scratch.Add "class" . }}
+  {{ $class = (printf "%s %s" $class . ) }}{{/* Append to default values for column */}} 
 {{ end }}
 
-<div class="{{ .Scratch.Get "class" }}">
+<div class="{{ $class }}">
   {{ .Inner }}
 </div>
