@@ -1,4 +1,17 @@
-{{ .Scratch.Set "class" "columns is-multiline" }}
+{{ $class := "columns is-multiline" }}
+
+
+
+
+{{/*
+ Reset the counter in parent shortcode.
+ This is because the parent shortcode is rendered after 
+ all its shilds "column" is rendered.
+ https://discourse.gohugo.io/t/explanation-of-rendering-order/6162
+ */}}
+{{ $.Page.Scratch.Set "count" 0 }}
+
+
 
 {{ with .Get "class"}}
    {{ $.Scratch.Add "class" " " }}
