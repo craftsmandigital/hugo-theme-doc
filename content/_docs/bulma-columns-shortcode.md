@@ -10,6 +10,8 @@ The shortcodes `{{</* columns */>}}` and `{{%/* column */%}}` is a way to build 
 
 
 
+
+
 shortcode | bulma feature | Bulma doc
 ---------|----------------|-----
 columns | `<div class="columns">` | [link](https://bulma.io/documentation/columns/basics/)
