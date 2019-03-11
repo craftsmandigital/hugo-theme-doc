@@ -345,3 +345,333 @@ Added box option because it is easier to see output
   {{% /column %}}
 
 {{< /columns >}}
+
+
+
+***
+## settings option
+Whith this option you can spesify the looking of the columns
+
+option | look 
+---------|---
+ zebra  | every other row is colored. Gives a zebra patern.
+ chess | Every other field is colored. Gives a chess pattern. 
+ mirror | Every other row vil be mirrored. Can bee combined with zebra and chess.
+
+```text
+{{</* columns  settings="<zebra | chess> <mirror>" */>}}
+
+{{</* columns  settings="zebra" */>}}
+{{</* columns  settings="chess" */>}}
+{{</* columns  settings="mirror" */>}}
+{{</* columns  settings="chess mirror" */>}}
+```
+
+
+
+
+### Rendered output of settings="zebra"
+
+```text
+{{</* columns  colsizes="2 3 2 3 2" settings="zebra" _class="box"*/>}}
+```
+Added box option because it is easier to see output
+{{< columns  colsizes="2 3 2 3 2" settings="zebra" _class="box" >}}
+  {{% column %}}
+    field 1
+  {{% /column %}}
+
+  {{% column %}}
+    field 2 
+  {{% /column %}}
+
+  {{% column %}}
+    field 3 
+  {{% /column %}}
+
+  {{% column %}}
+    field 4 
+  {{% /column %}}
+  
+  {{% column %}}
+    field 5
+  {{% /column %}}
+
+  {{% column %}}
+    field 6 
+  {{% /column %}}
+
+  {{% column %}}
+    field 7 
+  {{% /column %}}
+
+  {{% column %}}
+    field 8 
+  {{% /column %}}
+  
+  {{% column %}}
+    field 9
+  {{% /column %}}
+
+  {{% column %}}
+    field 10
+  {{% /column %}}
+
+  {{% column %}}
+    field 11
+  {{% /column %}}
+
+  {{% column %}}
+    field 12
+  {{% /column %}}
+
+{{< /columns >}}
+
+
+
+
+### Rendered output of settings="chess"
+
+{{% notification is-danger %}}
+NB! Odd numbers of columns wil work best because when the collumns colapse on a mobile device. The moust right and the next field would bee of same colour. Se field 4 and 5 below. It also hapend to 8 and 9.
+{{% /notification %}}
+```text
+{{</* columns  colsizes="2 3 4 3" settings="chess" _class="box"*/>}}
+```
+Added box option because it is easier to see output
+{{< columns  colsizes="2 3 4 3" settings="chess" _class="box" >}}
+  {{% column %}}
+    field 1
+  {{% /column %}}
+
+  {{% column %}}
+    field 2 
+  {{% /column %}}
+
+  {{% column %}}
+    field 3 
+  {{% /column %}}
+
+  {{% column %}}
+    field 4 
+  {{% /column %}}
+  
+  {{% column %}}
+    field 5
+  {{% /column %}}
+
+  {{% column %}}
+    field 6 
+  {{% /column %}}
+
+  {{% column %}}
+    field 7 
+  {{% /column %}}
+
+  {{% column %}}
+    field 8 
+  {{% /column %}}
+  
+  {{% column %}}
+    field 9
+  {{% /column %}}
+
+  {{% column %}}
+    field 10
+  {{% /column %}}
+
+  {{% column %}}
+    field 11
+  {{% /column %}}
+
+  {{% column %}}
+    field 12
+  {{% /column %}}
+
+{{< /columns >}}
+
+
+
+
+### Rendered output of settings="mirror"
+
+```text
+{{</* columns  colsizes="2 4 6" settings="mirror" _class="box"*/>}}
+```
+Added box option because it is easier to see output
+{{< columns  colsizes="2 4 6" settings="mirror" _class="box" >}}
+  {{% column %}}
+    field 1
+  {{% /column %}}
+
+  {{% column %}}
+    field 2 
+  {{% /column %}}
+
+  {{% column %}}
+    field 3 
+  {{% /column %}}
+
+  {{% column %}}
+    field 4 
+  {{% /column %}}
+  
+  {{% column %}}
+    field 5
+  {{% /column %}}
+
+  {{% column %}}
+    field 6 
+  {{% /column %}}
+
+  {{% column %}}
+    field 7 
+  {{% /column %}}
+
+  {{% column %}}
+    field 8 
+  {{% /column %}}
+  
+  {{% column %}}
+    field 9
+  {{% /column %}}
+
+  {{% column %}}
+    field 10
+  {{% /column %}}
+
+  {{% column %}}
+    field 11
+  {{% /column %}}
+
+  {{% column %}}
+    field 12
+  {{% /column %}}
+
+{{< /columns >}}
+
+
+
+
+
+
+
+
+### Rendered output of settings="chess mirror" 
+
+```text
+{{</* columns  colsizes="3 3 6" settings="chess mirror" _class="box"*/>}}
+```
+Added box option because it is easier to see output
+{{< columns  colsizes="3 3 6" settings="chess mirror" _class="box" >}}
+  {{% column %}}
+    field 1
+  {{% /column %}}
+
+  {{% column %}}
+    field 2 
+  {{% /column %}}
+
+  {{% column %}}
+    field 3 
+  {{% /column %}}
+
+  {{% column %}}
+    field 4 
+  {{% /column %}}
+  
+  {{% column %}}
+    field 5
+  {{% /column %}}
+
+  {{% column %}}
+    field 6 
+  {{% /column %}}
+
+  {{% column %}}
+    field 7 
+  {{% /column %}}
+
+  {{% column %}}
+    field 8 
+  {{% /column %}}
+  
+  {{% column %}}
+    field 9
+  {{% /column %}}
+
+  {{% column %}}
+    field 10
+  {{% /column %}}
+
+  {{% column %}}
+    field 11
+  {{% /column %}}
+
+  {{% column %}}
+    field 12
+  {{% /column %}}
+
+{{< /columns >}}
+
+
+
+
+## Improwments of the columns shortcode.
+
+{{< columns class="is-mobile" >}}
+  {{% column %}}
+**Improwment**
+  {{% /column %}}
+
+  {{% column %}}
+**Description**
+  {{% /column %}}
+
+  {{% column %}}
+{{%/* column class="\<Bulma settings>" */%}}
+  {{% /column %}}
+
+  {{% column %}}
+Posibility to add bulma settings directly
+to the inside shortcode column.
+  {{% /column %}}
+  
+  {{% column %}}
+colorized rows
+  {{% /column %}}
+
+  {{% column %}}
+Posibility to have many different
+collors in zebra setting 
+  {{% /column %}}
+
+  {{% column %}}
+colorized chess
+  {{% /column %}}
+
+  {{% column %}}
+Adding different collors to each field
+  {{% /column %}}
+  
+  {{% column %}}
+zebra and chess collors
+  {{% /column %}}
+
+  {{% column %}}
+Posebility to self decide witch bulma collours added
+in the chess and zebra patern.
+  {{% /column %}}
+
+  {{% column %}}
+Default configuration
+  {{% /column %}}
+
+  {{% column %}}
+Posibility to self decide what could be the default
+configuration for all the tings that is played wiht here.
+The configuration chould be added to a data file or
+variables in the config.toml file.
+  {{% /column %}}
+
+{{< /columns >}}
