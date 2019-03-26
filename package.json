@@ -1,0 +1,25 @@
+{
+  "name": "Datarekrutt",
+  "version": "1.0.0",
+  "description": "Datarekrutt, The educational site for the data noobs",
+  "main": "",
+  "scripts": {
+    "start": "hugo && gulp minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackingjack/hugo-datarekrutt.git"
+  },
+  "author": "Jon Arne Viksås",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hackingjack/hugo-datarekrutt/issues"
+  },
+  "homepage": "https://github.com/hackingjack/hugo-datarekrutt#readme",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "npm": "^6.9.0"
+  }
+}
