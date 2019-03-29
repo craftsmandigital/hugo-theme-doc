@@ -21,10 +21,6 @@ Området datasikkerhet er ganske stort. Dette kurset lister opp alle truslene og
 Det spiller ingen rolle hvilken rekkefølge du leser de forskjellige emnene.
 
 
-## Et overblikk over det som skal til for sikker bruk av dine enheter (Datamasikn/mobil/nettbrett)
-
-:: Her går en liste over alle temaene i kurset (Session.Pages) ::
-
 
 ## Noen definisjoner som vil bli benyttet i dette kurset
 
