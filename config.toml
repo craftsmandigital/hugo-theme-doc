@@ -5,7 +5,7 @@ theme = "capsule"
 SectionPagesMenu = "main"
 canonifyURLs = true
 enableGitInfo = true
-
+enableRobotsTXT = true
 [params]
   repo = "https://github.com/hackingjack/hugo-datarekrutt.git"
   share = true
