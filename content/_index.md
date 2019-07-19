@@ -8,6 +8,9 @@ config:
     variable: "featured"
     operator: "="
     value: true
+  sort:
+    variable: "date"
+    order: "desc"
 ---
 
 
