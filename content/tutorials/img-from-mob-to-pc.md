@@ -1,6 +1,6 @@
 ---
 title: "Kopiere bilde fra mobil til datamaskin"
-date: 2019-02-04T14:17:13+01:00
+date: 2019-02-05T14:17:13+01:00
 featured: true
 draft: false
 categories:
