@@ -1,5 +1,0 @@
-
-        {{ range (.Paginate (where .Pages "Params.featured" "=" true)).Pages -}}
-          {{ .Render "summary" }}
-
-        {{- end }}
