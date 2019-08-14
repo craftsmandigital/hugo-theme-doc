@@ -1,7 +1,7 @@
 # hugo-datarekrutt
 Datarekrutt, The educational site for the data noobs
 
-## The site is based on this [theme](../capsule).
+## The site is based on this [theme](../../../capsule).
 to get the repo and theme do this clone command
 
 > git clone --recursive <This repository>
