@@ -2,6 +2,14 @@
 title: "Google foto kurs"
 date: 2019-02-01T09:09:15+01:00
 draft: false
+# config:
+#   filter:
+#     variable: "featured"
+#     operator: "!="
+#     value: true
+#   sort:
+#     variable: "title"
+#     order: "desc"
 ---
 
 
