@@ -1,4 +1,5 @@
 baseURL = "https://datarekrutt.netlify.com/"
+DefaultContentLanguage = "no"
 languageCode = "en-us"
 title = "DataRekrutt"
 theme = "capsule"
