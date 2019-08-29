@@ -1,5 +1,5 @@
-# hugo-datarekrutt
-Datarekrutt, The educational site for the data noobs
+# hugo-theme-doc
+Documentation for the capsule theme and my portfolio of theme components.
 
 ## The site is based on this [theme](../../../capsule).
 to get the repo and theme do this clone command
